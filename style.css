@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  color: #ccc;
+  font-family: 'Amatic SC', Courier New;
+  font-size: 22px;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  font-size: 55px;
+  margin: 10px;
+  text-align: center;
+}
+
+hr {
+  color: #aaa;
+}
+
+.container {
+  width:  80vw;
+  margin:  auto;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px 40px 0px 40px;
+  min-height: 40vh;
+  max-height: 60vh;
+  overflow: scroll;
+}
+
+ul > li {
+  list-style: none;
+  overflow: auto;
+}
+
+#messageBox {
+  width: 80%;
+  height: 50px;
+  padding: 20px;
+  vertical-align: top;
+  font-size: 22px;
+}
+
+
+::placeholder {
+  color: #ccc;
+  font-family: 'Amatic SC', Courier New;
+  font-size: 22px;
+}
+
+#sendButton {
+  width: 20%;
+  height: 50px;
+  font-size: 22px;
+}
+
+.self {
+  background: #dc6;
+  color: #333;
+  border: 1px solid #111;
+  border-radius: 12px 12px 2px 12px;
+  padding: 5px 20px;
+  margin: 0px 0px 0px 50px;
+  float: right;
+}
+
+.other {
+  background: #6cd;
+  color: #333;
+  border: 1px solid #111;
+  border-radius: 12px 12px 12px 2px;
+  padding: 5px 20px;
+  margin: 0px 50px 0px 0px;
+  float: left;
+}
+
+#connStatus {
+  color: #555;
+}
+
+.subtext {
+  color: #dc6;
+  font-size: 15px;
+  margin: 0px;
+}
+
+#offerCode, #answerCode {
+  background: #151515;
+  color: #dc6;
+  font-size: 10px;
+}
+
+.flexParent {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+}
+
+.flexChild {
+  margin: 0px 20px;
+}
+
+.flexChild1 {
+  width: 100px;
+}
+
+.flexParent p {
+  margin: 0px;
+}
+
+.inputColor {
+  min-width: 150px;
+  height: 25px;
+  background: #191919;
+  color: #ccc;
+  border: 1px solid #111;
+  border-radius: 3px;
+  transition: all 0.5s;
+  font-family: 'Amatic SC', Courier New;
+  resize: none;
+  vertical-align: top;
+}
+
+.inputColor:focus {
+  border: 1px solid #dc6;
+  outline: none;
+}
+
+.buttonColor {
+  background: #dc6;
+  height: 25px;
+  color: #333;
+  border: 1px solid #111;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s; 
+  font-family: 'Amatic SC', Courier New;
+  vertical-align: top;
+}
+
+.buttonColor:hover {
+  background: #333;
+  color: #dc6;
+  border: 1px solid #dc6;
+}
+
+#generateCode, #generateAnswer, #connectButton {
+  font-size: 18px;
+}
+
+#answerBox {
+  display: none;
+}
+
+
+

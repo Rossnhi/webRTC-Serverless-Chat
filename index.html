@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&  display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,  minimum-scale=1,width=device-width">
+  </head>
+  <body>
+    <div class="container">
+      <h1>~Chat~</h1>
+      <hr>
+      <div class="container">
+      <ul id="chatWindow">
+      </ul>
+      </div>
+      <hr>
+      <div class="container">
+        <input id="messageBox" class="inputColor" type="text" placeholder="Type your message here..."
+        ><button id="sendButton" class="buttonColor">Send</button>
+        <div class="container flexParent">
+          <div class="flexChild flexChild1">
+            <input type="radio" id="host" name="offer" value="Host" checked="checked">
+            <label for="host">Host</label><br>
+            <input type="radio" id="join" name="offer" value="Join">
+            <label for="join">Join</label><br>
+            <span id="connStatus">Connected</span>
+          </div>
+          <div class="flexChild" id="offerBox">
+            <Button id="generateCode" class="buttonColor">Generate Code</button>
+            <textarea readonly id="offerCode" class="inputColor"></textarea>
+            <Button id="copyCode" class="buttonColor"><i class="fa fa-copy"></i></button>
+            <p class="subtext">Copy the above offer code and send it to your friend. Paste the answer code they send to you in the textbox below.</p>
+            <input id="answerRecieved" class="inputColor" type="text" class="answer">
+            <button id="connectButton" class="buttonColor">Connect</button>
+          </div>
+          <div class="flexChild" id="answerBox">
+            <input id="offerRecieved" class="inputColor" type="text" class="answer">
+            <Button id="generateAnswer" class="buttonColor">Generate Answer</button>
+            <p class="subtext">Enter the offer code here to generate the answer code. Copy the answer code below and send it to your friend.</p>
+            <textarea readonly id="answerCode" class="inputColor"></textarea>
+            <Button id="copyAnswer" class="buttonColor"><i class="fa fa-copy"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="DOMmanipulation.js"></script>
+  </body>
+</html>
